@@ -1,0 +1,127 @@
+*{
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{width: 1000px;;}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+img{
+height: 100%;
+margin: 20px;
+}   
+#img-icon{height: 200px;width: fit-content; margin-right: 200px;}
+#pac-input{
+display: block;
+position: relative;
+justify-content: center;
+align-items: center;
+}
+.imgs{
+width: 80%;
+height: 200px;
+text-align: left;
+position: relative;
+border: none;
+outline:none;
+font-size: 20px;
+font-weight: bold;
+color: #333;
+padding-left: 20px;
+box-sizing: border-box; 
+cursor: pointer;
+}
+.sectionp{
+margin: auto;
+display: flex;
+color: #464747;
+}
+article{
+margin: 6px;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 20px;
+    width: 250px;
+    height: 100px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1)
+}
+
+.comment-box{
+    
+    padding:5px;
+}
+
+
+
+.comment-area textarea{
+   resize: none; 
+   border: 1px solid #000000;
+}
+
+
+.form-control:focus {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-color: #ffe600;
+    outline: 0;
+    box-shadow: 0 0 0 1px rgb(255, 255, 255) !important;
+}
+
+.send {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.send:hover {
+    color: rgb(0, 0, 0);
+    background-color: #000000;
+    border-color: #000000;
+}
+
+
+.rating {
+ display: flex;
+        margin-top: -10px;
+    flex-direction: row-reverse;
+    margin-left: -4px;
+        float: left;
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 19px;
+    font-size: 25px;
+    color: #eeff00;
+    cursor: pointer;
+    border-color:black 1px solid ;
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+      
